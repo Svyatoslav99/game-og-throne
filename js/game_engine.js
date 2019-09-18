@@ -117,7 +117,7 @@ function main_loop(FPS, frame_function) {
         if (warning && 1000/(frame_end - prev_frame_end) < 0.9*FPS) {
             warning -= 1;
             console.warn("We cannot provide a smooth animation.",
-                        "The best FPS we can manage is", 1000/(frame_end - prev_frame_end));
+                        "The best FPS weee can manage is", 1000/(frame_end - prev_frame_end));
         }
         prev_frame_end =  frame_end;
         setTimeout(wrapper, Math.max(0, frame_duration - frame_end + prev_frame_end));
